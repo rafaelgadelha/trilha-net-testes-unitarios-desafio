@@ -76,12 +76,13 @@ public class ValidacoesListaTests
 
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
+        int resultadoEsperado = 9;
 
         // Act
-
+        int resultado = _validacoes.RetornarMaiorNumeroLista(lista);
         // Assert
         //TODO: Corrigir o Assert.Equal com base no retorno da chamada ao método
-        Assert.Equal(9, 9);
+        Assert.Equal(resultadoEsperado, resultado);
     }
 
     [Fact]
