@@ -45,7 +45,10 @@ public class ValidacoesListaTests
 
         // Act
 
+        var resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
+
         // Assert
+        Assert.False(resultado);
     }
 
     //TODO: Corrigir a anotação [Fact]
